@@ -3,10 +3,10 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Baloo Thambi 2", system-ui;
   background-color: #c4dccd;
   color: #393939;
+  font-size: 18px;
 }
 
 img {
@@ -20,8 +20,8 @@ h1 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 /*Sizing*/
@@ -48,7 +48,7 @@ p {
   list-style: none;
   display: inline-block;
   background-color: #dddddd;
-  width: 100px;
+  width: 130px;
   border-color: #2b2b2b;
   border-style: outset;
   margin: 0px 10px;
@@ -99,7 +99,7 @@ p {
 
 .card-body {
   padding: 10px 20px;
-  text-align: justify;
+  text-align: left;
 }
 
 /*ringtones*/

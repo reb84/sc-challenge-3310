@@ -1,0 +1,87 @@
+html,
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #c4dccd;
+  color: #393939;
+}
+
+img {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/*Sizing*/
+
+.container {
+  margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+  background-color: #c4dccd;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+
+.header h2 {
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.header h2 span {
+  color: #575757;
+}
+
+.headernav {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: palegoldenrod;
+}
+
+/*about*/
+.about {
+  background-color: #dddddd;
+  padding: 150px 20px;
+  text-align: center;
+  border-bottom: 2px solid #2b2b2b;
+  border-top: 2px solid #2b2b2b;
+}
+
+/*ringtones*/
+.ringtones {
+  background-color: #dddddd;
+  padding: 150px 20px;
+  text-align: center;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+/*snake*/
+.snake {
+  background-color: #dddddd;
+  padding: 150px 20px;
+  text-align: center;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+/*footer*/
+.footer {
+  background-color: #dddddd;
+  padding: 150px 20px;
+  text-align: center;
+  border-bottom: 2px solid #2b2b2b;
+}

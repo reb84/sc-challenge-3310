@@ -1,4 +1,8 @@
-html,
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   scroll-behavior: smooth;
   margin: 0;
@@ -6,17 +10,17 @@ body {
   font-family: "Baloo Thambi 2", system-ui;
   background-color: #c4dccd;
   color: #393939;
-  font-size: 18px;
-}
-
-img {
-  margin: 10px auto;
-  height: auto;
-  width: auto;
+  font-size: 16px;
 }
 
 h1 {
+  font-size: 88px;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+h2 {
   font-size: 60px;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 p {
@@ -40,16 +44,18 @@ p {
 }
 
 .headernav {
-  margin: 0px auto -45px auto;
-  text-align: center;
+  padding-top: 40px;
+  border-bottom: 4px solid #2b2b2b;
+  background-color: #fff;
 }
 
 .headernav ul li {
+  text-align: center;
   list-style: none;
   display: inline-block;
   width: 130px;
   border: 3px solid #2b2b2b;
-  margin: 0px 10px;
+  margin: 0 -7px -3px 0;
 }
 
 .headernav a {
@@ -71,7 +77,6 @@ p {
 .about {
   background-color: #dddddd;
   padding: 60px 20px;
-  text-align: center;
   border-bottom: 4px solid #2b2b2b;
   border-top: 4px solid #2b2b2b;
 }
@@ -81,12 +86,13 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto, 1fr, 1fr, auto;
   gap: 12px;
+  text-align: center;
 }
 
 .card-title {
   background-color: #c4c4c4;
   padding: 4px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 3px solid #2b2b2b;
@@ -103,36 +109,16 @@ p {
   padding: 10px;
 }
 
-.div2 {
-  grid-row-start: 2;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-}
-
-.div3 {
-  grid-row-start: 2;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-}
-
+.div2,
+.div3,
 .div4 {
   grid-row-start: 2;
   border: 3px solid #2b2b2b;
   background-color: white;
 }
 
-.div5 {
-  grid-row-start: 3;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-}
-
-.div6 {
-  grid-row-start: 3;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-}
-
+.div5,
+.div6,
 .div7 {
   grid-row-start: 3;
   border: 3px solid #2b2b2b;
@@ -150,23 +136,21 @@ p {
 /*ringtones*/
 .ringtones {
   background-color: #dddddd;
-  padding: 150px 20px;
-  text-align: center;
+  padding: 60px 20px;
   border-bottom: 4px solid #2b2b2b;
 }
 
 /*snake*/
 .snake {
   background-color: #dddddd;
-  padding: 150px 20px;
-  text-align: center;
+  padding: 60px 20px;
   border-bottom: 4px solid #2b2b2b;
 }
 
 /*footer*/
 .footer {
-  background-color: #dddddd;
-  padding: 150px 20px;
+  background-color: #c3c7cb;
+  padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #2b2b2b;
+  font-size: 14px;
 }

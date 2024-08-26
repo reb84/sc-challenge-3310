@@ -76,25 +76,11 @@ p {
   border-top: 4px solid #2b2b2b;
 }
 
-.about-intro {
-  padding: 20px 0px;
-  margin-bottom: 20px;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-}
-
-.about-intro p {
-  padding: 10px;
-}
-
 .cards {
-  display: flex;
-  gap: 20px;
-}
-
-.card-single {
-  border: 3px solid #2b2b2b;
-  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto, 1fr, 1fr, auto;
+  gap: 12px;
 }
 
 .card-title {
@@ -107,8 +93,58 @@ p {
 }
 
 .card-body {
-  padding: 10px 20px;
-  text-align: left;
+  padding: 10px;
+}
+
+.div1 {
+  grid-column: span 3 / span 3;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+  padding: 10px;
+}
+
+.div2 {
+  grid-row-start: 2;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div3 {
+  grid-row-start: 2;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div4 {
+  grid-row-start: 2;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div5 {
+  grid-row-start: 3;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div6 {
+  grid-row-start: 3;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div7 {
+  grid-row-start: 3;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+}
+
+.div8 {
+  grid-column: span 3 / span 3;
+  grid-row-start: 4;
+  border: 3px solid #2b2b2b;
+  background-color: white;
+  padding: 10px;
 }
 
 /*ringtones*/
@@ -116,7 +152,7 @@ p {
   background-color: #dddddd;
   padding: 150px 20px;
   text-align: center;
-  border-bottom: 2px solid #2b2b2b;
+  border-bottom: 4px solid #2b2b2b;
 }
 
 /*snake*/
@@ -124,7 +160,7 @@ p {
   background-color: #dddddd;
   padding: 150px 20px;
   text-align: center;
-  border-bottom: 2px solid #2b2b2b;
+  border-bottom: 4px solid #2b2b2b;
 }
 
 /*footer*/
@@ -132,5 +168,5 @@ p {
   background-color: #dddddd;
   padding: 150px 20px;
   text-align: center;
-  border-bottom: 2px solid #2b2b2b;
+  border-bottom: 4px solid #2b2b2b;
 }

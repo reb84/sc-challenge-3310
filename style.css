@@ -8,25 +8,33 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: "Baloo Thambi 2", system-ui;
-  background-color: #c4dccd;
-  color: #393939;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffc85f;
+  color: #646464;
 }
 
 h1 {
-  font-size: 88px;
-  font-family: "Pixelify Sans", sans-serif;
+  font-size: 94px;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
 }
 
 h2 {
   font-size: 60px;
-  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Permanent Marker", cursive;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Permanent Marker", cursive;
+  color: #646464;
+  opacity: 0.8;
+  letter-spacing: 2px;
 }
 
 p {
-  font-weight: 700;
   line-height: 1.2;
+  font-size: 16px;
 }
 
 /*Sizing*/
@@ -39,54 +47,45 @@ p {
 /*header*/
 
 .header {
-  background-color: #c4dccd;
+  padding: 100px 0px 130px 0px;
+  position: relative;
   text-align: center;
-  padding: 80px 0px;
 }
 
 .headernav {
-  padding-top: 40px;
-  border-bottom: 4px solid #2b2b2b;
-  background-color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .headernav ul li {
   text-align: center;
   list-style: none;
   display: inline-block;
-  width: 180px;
-  border: 3px solid #2b2b2b;
-  margin: 0 -7px -3px 0;
 }
 
 .headernav a {
-  display: block;
   padding: 10px;
   text-decoration: none;
-  background-color: #dddddd;
-  color: #393939;
-  font-weight: 700;
-  text-transform: uppercase;
+  color: #646464;
 }
 
 .headernav a:hover {
-  background-color: #2b2b2b;
-  color: #fff;
+  color: #f6625e;
+  border-bottom: 2px solid #f6625e;
 }
 
-/*about*/
+/*header nav*/
+
 /*about*/
 .about {
   background-color: #fff;
-  padding: 60px 20px;
-  border-bottom: 4px solid #2b2b2b;
-  border-top: 4px solid #2b2b2b;
+  padding: 30px 0px 50px 0px;
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  color: #373737;
 }
 
 .flex-items {
@@ -95,10 +94,12 @@ p {
   padding: 20px;
   margin: 6px;
   border-radius: 10px;
+  align-content: center;
 }
 
 .flex-items:nth-child(1) {
-  background-color: #ffb8c9;
+  background-color: #ffc85f;
+  font-weight: 500;
 }
 
 .flex-items:nth-child(2) {
@@ -125,71 +126,64 @@ p {
   background-color: #b8d1ff;
 }
 .flex-items:nth-child(8) {
-  background-color: #c1e297;
+  background-color: #ffc85f;
+  font-weight: 500;
 }
 
 /*ringtones*/
 .ringtones {
-  background-color: #dddddd;
-  padding: 60px 20px;
-  border-bottom: 4px solid #2b2b2b;
-}
-
-iframe {
-  padding: 8px 8px 0px 8px;
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto, 1fr, 1fr, auto;
-  gap: 8px;
-}
-
-.div1 {
-  grid-column: span 3 / span 3;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-  padding: 20px;
-}
-
-.div2,
-.div3,
-.div4 {
-  grid-row-start: 2;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-  text-align: center;
-  padding-bottom: 0px;
-}
-
-.div5 {
-  grid-column: span 3 / span 3;
-  grid-row-start: 3;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-  padding: 20px;
-}
-
-.div6 {
-  grid-column: span 3 / span 3;
-  grid-row-start: 4;
-  border: 3px solid #2b2b2b;
-  background-color: white;
-  padding: 20px;
+  position: relative;
+  padding: 30px 0px 50px 0px;
 }
 
 /*snake*/
 .snake {
-  background-color: #dddddd;
-  padding: 60px 20px;
-  border-bottom: 4px solid #2b2b2b;
+  background-color: #fff;
+  position: relative;
+  padding: 30px 0px 50px 0px;
 }
 
 /*footer*/
 .footer {
-  background-color: #c3c7cb;
-  padding: 20px;
+  padding: 50px 0px 30px 0px;
   text-align: center;
   font-size: 14px;
+  position: relative;
+}
+
+/*bottom wave*/
+
+.bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.bottom-wave img {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+}
+
+/*top wave*/
+
+.top-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.top-wave img {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
 }

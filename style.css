@@ -186,11 +186,6 @@ p {
   padding: 30px 0px 50px 0px;
 }
 
-::selection {
-  color: #f5f5f5;
-  background-color: red;
-}
-
 .snake-game {
   margin: auto;
   width: 350px;

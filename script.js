@@ -89,12 +89,12 @@ function play() {
     tail[0].x += dir.x;
     tail[0].y += dir.y;
     c.clearRect(0, 0, canvas.width, canvas.height);
-    c.fillStyle = "rgb(30,30,30)";
+    c.fillStyle = "rgb(199,209,199)";
     c.fillRect(0, 0, canvas.width, canvas.height);
-    c.fillStyle = "rgb(240,40,0)";
+    c.fillStyle = "rgb(114,137,19)";
     c.fillRect(food.x + 1, food.y + 1, cell - 2, cell - 2);
     for (let t in tail) {
-      c.fillStyle = "#f5f5f5";
+      c.fillStyle = "#4a4a4a";
       c.fillRect(tail[t].x + 1, tail[t].y + 1, cell - 2, cell - 2);
     }
     scoreDisplay.innerHTML = `Score: ${score}`;

@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 94px;
+  font-size: 84px;
   font-family: "Permanent Marker", cursive;
   color: #fff;
 }
@@ -47,9 +47,27 @@ p {
 /*header*/
 
 .header {
-  padding: 100px 0px 130px 0px;
   position: relative;
   text-align: center;
+}
+
+.title-wrap {
+  overflow: hidden;
+  position: relative;
+  padding: 160px 0px 160px 0px;
+}
+
+.title-bg {
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+
+.title-content {
+  position: relative;
 }
 
 .headernav {
@@ -124,7 +142,7 @@ p {
 /*ringtones*/
 .ringtones-container {
   position: relative;
-  padding: 30px 0px 50px 0px;
+  padding: 60px 0px 50px 0px;
 }
 
 .tone-flex-items {

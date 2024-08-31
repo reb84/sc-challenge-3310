@@ -78,7 +78,7 @@ p {
 /*header nav*/
 
 /*about*/
-.about {
+.about-container {
   background-color: #fff;
   padding: 30px 0px 50px 0px;
 }
@@ -122,7 +122,7 @@ p {
 }
 
 /*ringtones*/
-.ringtones {
+.ringtones-container {
   position: relative;
   padding: 30px 0px 50px 0px;
 }
@@ -180,10 +180,42 @@ p {
 }
 
 /*snake*/
-.snake {
+.snake-container {
   background-color: #fff;
   position: relative;
   padding: 30px 0px 50px 0px;
+}
+
+::selection {
+  color: #f5f5f5;
+  background-color: red;
+}
+
+.wrapper {
+  margin: auto;
+  width: 570px;
+  text-align: center;
+  font-family: Calibri, monospace;
+  font-size: 1.1em;
+}
+
+#snakeGame {
+  border: 5px solid #ccc;
+}
+
+#snakeGameScore {
+  float: left;
+}
+#snakeGameHighestScore {
+  float: right;
+}
+
+footer {
+  font-family: monospace;
+  position: fixed;
+  left: 50px;
+  bottom: 10px;
+  font-size: 1.25em;
 }
 
 /*footer*/

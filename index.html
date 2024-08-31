@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -36,7 +36,7 @@
     </div>
 
     <!-- about -->
-    <div class="about" id="about">
+    <div class="about-container" id="about">
       <div class="container">
         <h2>About</h2>
 
@@ -111,7 +111,7 @@
     </div>
 
     <!-- ringtones  -->
-    <div class="ringtones" id="ringtones">
+    <div class="ringtones-container" id="ringtones">
       <div class="top-wave">
         <img src="imgs\twaves.svg" />
       </div>
@@ -197,9 +197,17 @@
     </div>
 
     <!-- snake  -->
-    <div class="snake" id="snake">
+    <div class="snake-container" id="snake">
       <div class="container">
         <h2>Snake II</h2>
+        <div class="snake-game">
+          <div class="wrapper">
+            <h3>Play Snake! (using arrows)</h3>
+            <canvas id="snakeGame"></canvas>
+            <h2 id="snakeGameScore">Score: 0</h2>
+            <h3 id="snakeGameHighestScore">Highest Score: 0</h3>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -216,4 +224,5 @@
       </p>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

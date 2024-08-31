@@ -211,9 +211,8 @@ p {
   text-align: center;
 }
 
-#snakeGame {
-  border: 5px solid #ffc85f;
-  margin-top: 10px;
+.snake-flex-items img {
+  border-radius: 10px;
 }
 
 /*footer*/

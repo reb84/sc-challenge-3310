@@ -2,9 +2,10 @@ document.addEventListener("keydown", keyPressed);
 
 let canvas = document.getElementById("snakeGame");
 let scoreDisplay = document.getElementById("snakeGameScore");
-let highestScoreDisplay = document.getElementById("snakeGameHighestScore");
 let c = canvas.getContext("2d");
-const cell = 40;
+
+// Reduce cell size by 50%
+const cell = 20;
 const rows = 14;
 const cols = 14;
 canvas.height = rows * cell;
@@ -30,7 +31,6 @@ let food = {
   y: snakeInitial.y,
 };
 let score = 0;
-let highestScore = 0;
 let start = true;
 
 function play() {
@@ -98,10 +98,8 @@ function play() {
       c.fillRect(tail[t].x + 1, tail[t].y + 1, cell - 2, cell - 2);
     }
     scoreDisplay.innerHTML = `Score: ${score}`;
-    if (highestScore < score) highestScore = score;
-    highestScoreDisplay.innerHTML = `Highest score: ${highestScore}`;
     requestAnimationFrame(play);
-  }, 1000 / 12);
+  }, 1000 / 8);
 }
 requestAnimationFrame(play);
 

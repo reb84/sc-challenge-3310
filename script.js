@@ -41,6 +41,8 @@ function play() {
       tail[0].y < 0 ||
       tail[0].y === canvas.height
     ) {
+      alert("Game Over! Your final score is: " + score);
+
       tail = [];
       for (let i = 0; i < 3; i++) {
         tail.push({

@@ -39,10 +39,12 @@ function play() {
       tail[0].x < 0 ||
       tail[0].x === canvas.width ||
       tail[0].y < 0 ||
-      tail[0].y === canvas.height
+      tail[0].y === canvas.height ||
+      check(tail[0].x, tail[0].y)
     ) {
       alert("Game Over! Your final score is: " + score);
 
+      // Reset game
       tail = [];
       for (let i = 0; i < 3; i++) {
         tail.push({
@@ -63,12 +65,7 @@ function play() {
         };
       }
     }
-    if (check(tail[0].x, tail[0].y)) {
-      for (let i = 0; i < score; i++) {
-        tail.pop();
-      }
-      score = 0;
-    }
+
     if (tail[0].x === food.x && tail[0].y === food.y) {
       score++;
       tail.push({
@@ -82,14 +79,17 @@ function play() {
         };
       }
     }
-    if (!(dir.x === 0 && dir.y === 0))
+
+    if (!(dir.x === 0 && dir.y === 0)) {
       for (let t = tail.length - 1; t > 0; t--) {
         tail[t].x = tail[t - 1].x;
         tail[t].y = tail[t - 1].y;
         start = false;
       }
+    }
     tail[0].x += dir.x;
     tail[0].y += dir.y;
+
     c.clearRect(0, 0, canvas.width, canvas.height);
     c.fillStyle = "rgb(199,209,199)";
     c.fillRect(0, 0, canvas.width, canvas.height);
@@ -115,7 +115,7 @@ function inTail(food) {
 }
 
 function check(x, y) {
-  for (let i = 2; i < tail.length; i++) {
+  for (let i = 1; i < tail.length; i++) {
     if (x === tail[i].x && y === tail[i].y) {
       return true;
     }
